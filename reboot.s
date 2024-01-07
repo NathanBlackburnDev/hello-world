@@ -1,5 +1,3 @@
-// restart computer 
-
 .global _main
 .align 2
 
