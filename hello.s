@@ -1,7 +1,3 @@
-// 
-// hello world 64 bit ARM arch apple sillicon 
-//
-
 .global _main
 .align 2 
 
@@ -23,15 +19,8 @@ _reboot:
     svc 0
 
 _terminate:
-    // first 7 registers of X variety are for paramaters
-    // setting myself up for a function call, passing in the number 0 and its going to go into the first register
-    // return 0
-    // X is for 64 bit
     mov X0, #0 // return 0
-    // another register, this is a supervisor call
-    // termination is represented by number 1
     mov X16, #1 // terminate
-    // make the supervisor call
     svc 0 // syscall
 
 // hello world string
