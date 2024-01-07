@@ -22,7 +22,6 @@ _terminate:
     mov X0, #0 // return 0
     mov X16, #1 // terminate
     svc 0 // syscall
-
-// hello world string
+    
 helloworld: .ascii "Hello, world\n"
     
